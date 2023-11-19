@@ -6,7 +6,7 @@ import "flatpickr/dist/flatpickr.min.css";
 let selectedDate;
 let countdownInterval;
 
-document.querySelector('[data-start]').addEventListener('click', startTimer);
+document.querySelector('[data-start]').disabled = true; // Забороняємо клікати кнопку при завантаженні сторінки
 
 flatpickr("#datetime-picker", {
   enableTime: true,
@@ -24,6 +24,8 @@ flatpickr("#datetime-picker", {
     }
   },
 });
+
+document.querySelector('[data-start]').addEventListener('click', startTimer);
 
 function startTimer() {
   function updateTimer() {
