@@ -1,0 +1,4 @@
+!function(){var t;function e(){document.body.style.backgroundColor="#".concat(Math.floor(16777215*Math.random()).toString(16).padStart(6,"0"))}function d(){document.querySelector("[data-start]").disabled=!0,document.querySelector("[data-stop]").disabled=!1,e(),t=setInterval(e,1e3)}function a(){document.querySelector("[data-start]").disabled=!1,document.querySelector("[data-stop]").disabled=!0,clearInterval(t)}document.addEventListener("DOMContentLoaded",function(){document.querySelector("[data-start]").addEventListener("click",d),document.querySelector("[data-stop]").addEventListener("click",a),// Встановлення початкового стану кнопок при завантаженні сторінки
+document.querySelector("[data-start]").disabled=!1,document.querySelector("[data-stop]").disabled=!0})}();//# sourceMappingURL=01-color-switcher.5f3a00c0.js.map
+
+//# sourceMappingURL=01-color-switcher.5f3a00c0.js.map
